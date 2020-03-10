@@ -21,7 +21,7 @@ public class Clase1 {
     String cadena = "Hola Mundo";
     //String nombre variable y el valor entre comillas dobles
     boolean buleano = false;
-    buleano = true;
+    //buleano = true;
     boolean buleano2 = false;
     
     
@@ -29,6 +29,18 @@ public class Clase1 {
         // TODO code application logic hHLLISere
         // comentario una linea
         // comentario en linea
+        
+        imprimirNombre();
+        sumar2Numeros(5,8);
+        System.out.println(sumar2Numeros(5,8));
     }
     
+    public static void imprimirNombre(){
+        System.out.println("Abel");
+    }
+    
+    public static int sumar2Numeros(int num1, int num2){
+        int suma= num1+num2;
+        return suma;
+    }
 }
