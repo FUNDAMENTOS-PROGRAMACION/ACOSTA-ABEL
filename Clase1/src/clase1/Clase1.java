@@ -36,11 +36,33 @@ public class Clase1 {
     }
     
     public static void imprimirNombre(){
-        System.out.println("Abel");
+        System.out.println("Utiliza salto de linea\n"+"Abel \nAcosta");
+        // para salto de linea \n  
+        System.out.println("Utiliza tabulador:" + " Ab \t el");
+        //sirve para tabular \t da un espacio 
+        // \b -> borrar a la izquiera
+        // \f  -> comenzo de pagina
+        // \r -> retroceder
+        
+        // .length() el numero de letras de una cadena de caracteres
+        //.trim() -> elimina los espacios en blanco y solo queda la palabra
+        
+        String cadena = "Abel";
+        System.out.println("Numero de caracteres es: "+ cadena.length());
+        
+        String cadena2 = " Acosta  ";
+        System.out.println("Elimina espacios en blanco");
+        System.out.println(cadena2.trim());
+        System.out.println("Utiliza toUpperCase"+ cadena2.toUpperCase());
+        System.out.println("Utiliza toLowerCase"+ cadena2.toLowerCase());
+        System.out.println("Se utiliza replace para reemplazar "+cadena+" por "+cadena.replace(cadena, "hola"));
     }
     
     public static int sumar2Numeros(int num1, int num2){
         int suma= num1+num2;
         return suma;
+        
     }
+    
+    
 }
