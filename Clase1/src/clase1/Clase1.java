@@ -33,6 +33,11 @@ public class Clase1 {
         imprimirNombre();
         sumar2Numeros(5,8);
         System.out.println(sumar2Numeros(5,8));
+        
+        System.out.println("Las ocpciones son iguales");
+        
+   
+        
     }
     
     public static void imprimirNombre(){
@@ -59,6 +64,7 @@ public class Clase1 {
     }
     
     public static int sumar2Numeros(int num1, int num2){
+        
         int suma= num1+num2;
         return suma;
         
