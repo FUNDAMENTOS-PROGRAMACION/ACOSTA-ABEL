@@ -50,6 +50,11 @@ public class Condicionales {
                 System.out.println("Opcion default");    
         }
         
+        for(int inicio=0; 100>inicio; inicio++){
+            
+        System.out.println(inicio);
+        }
+        
     }
     
 }
