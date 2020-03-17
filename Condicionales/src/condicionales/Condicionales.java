@@ -50,11 +50,36 @@ public class Condicionales {
                 System.out.println("Opcion default");    
         }
         
+        System.out.println("FOR");
+        
+        
         for(int inicio=0; 100>inicio; inicio++){
             
         System.out.println(inicio);
         }
         
+        
+        System.out.println("WHILE");
+        
+        int cont=0;
+        
+        while(cont<10){
+            System.out.println(cont);
+            
+            cont++;
+        }
+        
+         System.out.println("DO-WHILE");
+        
+        
+         int contador =0;
+         do{
+              System.out.println(contador);
+              contador++;
+         }while(contador<10);
+                
+                 
+        //final main
     }
     
 }
