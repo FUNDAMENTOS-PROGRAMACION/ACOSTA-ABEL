@@ -17,8 +17,16 @@ public class Arreglos {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int arregloNumero[] = new int[]{1,2,3,4,5};
+        int arregloNumero[] = new int[]{1,25,9,8,15};
         
+        for(int i=0; i<5; i++){
+            System.out.println(arregloNumero[i]);
+        }
+        
+        
+        String arregloLetras[] = new String[]{"a","b","c"};
+        System.out.println("ARREGLO LETRAS");
+        System.out.println(arregloLetras[2]);
         
         //final main
     }
