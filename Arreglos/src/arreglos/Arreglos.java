@@ -31,9 +31,13 @@ public class Arreglos {
         for(int i=0; i<arregloLetras.length; i++){
             
             if(arregloLetras[i]=="x"){
+                
+                String localv="hola soy una variable local";
+                System.out.println(localv);
                 System.out.println("es verdadero es x");
             }else{
                  System.out.println("es falso");
+                
             }
             System.out.println("Valor indice "+ i + "  Valor arreglo  "+arregloLetras[i]);
         }
