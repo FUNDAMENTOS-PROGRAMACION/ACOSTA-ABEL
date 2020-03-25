@@ -14,9 +14,19 @@ public class ProgramaAbelAcosta {
     /**
      * @param args the command line arguments
      */
+    
+    
+     // DECLARAR VARIABLES
+    int varNumero = 5;  // variable numerica
+    String varPalabra = "Hola Como Estas";  // variable strinf 
+    char  varCaracter = 'a';  // variable char o caracter
+    boolean varbooleana = false;  // variable boolena
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
-        
+                
+           
         
         
     }//FIN MAIN
