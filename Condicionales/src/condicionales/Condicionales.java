@@ -30,18 +30,18 @@ public class Condicionales {
             
         System.out.println("es falso son diferentes");
         }
+        String ola= "b";
+        switch(ola){
         
-        switch('a'){
-        
-            case 1:
+            case "a":
 
                 System.out.println("Ingreso a la opcion 1");
 
             break;
 
-            case 2: 
+            case "b": 
 
-                System.out.println("Ingreso a la opcion 1");
+                System.out.println("Ingreso a la opcion b");
 
             break;
 

@@ -18,16 +18,24 @@ public class Matrices {
         // TODO code application logic here
         
         
-        int matrizNumeros[][];
-        matrizNumeros = new int[2][2];
+        int matrizPpal[][];
+        matrizPpal = new int[4][3];
         
-        for(int inicioF = 0; inicioF < matrizNumeros.length; inicioF++){
-            for(int inicioC = 0; inicioC <matrizNumeros[inicioF].length; inicioC++ ){
-                System.out.println("ingresando valores" + inicioF );
-                matrizNumeros[inicioF][inicioC] =2;
+        for(int iFila = 0; iFila < matrizPpal.length; iFila++){
+            for(int iColumna = 0; iColumna <matrizPpal[iFila].length; iColumna++ ){
+               System.out.println("Valor ingresado en posicion: ["+iFila+"," +iColumna+ "]");
+                matrizPpal[iFila][iColumna] = 3+iFila+iColumna;
                 
             }
         }
+        
+        for(int iFila = 0; iFila < matrizPpal.length; iFila++){
+        for (int iColumna = 0; iColumna < matrizPpal[iFila].length; iColumna++) {
+        System.out.println("El valor en la posicion ["+iFila+"," +iColumna+ "] es:");
+        System.out.println(matrizPpal[iFila][iColumna]);
+        }
+        }
+        
     }  //fin main
     
 }

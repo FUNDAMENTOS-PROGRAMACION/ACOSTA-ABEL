@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 package funciones;
-
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
 /**
  *
  * @author ABEL
@@ -17,20 +20,28 @@ public class Funciones {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
-        System.out.println(suma(1,5));
-        System.out.println(saludar());
-       
+        String ubicacionArchivo = "archivoPrueba.txt";
+        String contenidoArchivo = "Este es un archivo creado en JAVA";
+// declarar archivos
+// File es importado de java.io
+        File archivo = new File(ubicacionArchivo);
+        if(archivo.exists())
+        {
+            System.out.println("archivo ya existe");
+        }
+        else{
+                try { // si esta bien no pasa nada se ejecuta normalmente el try
+// importado de java.io
+            archivo.createNewFile();
+            FileWriter escribirArchivo = new FileWriter(archivo);
+            BufferedWriter bufferEscritura = new BufferedWriter(escribirArchivo);
+            bufferEscritura.write(contenidoArchivo);
+            bufferEscritura.close();
+            } catch (IOException ex) { // capturar errores del try
+        System.out.println("Error al crear archivo");
+            }
+        }       
     }  //final main
     
     
-    public static int suma(int num1, int num2){
-        int sumar= num1 + num2;
-        return sumar;
-       
-    }
-    
-    public static String saludar(){
-        return "hola";
-    }
 }//final total
